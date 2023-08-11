@@ -30,10 +30,10 @@ function createPromises(delay, step, amount) {
   for (let i = 1; i <= amount; i++) {
     createPromise(i, delay)
       .then(({ position, delay }) => {
-        console.log(`✅ Fulfilled promise ${position} in ${delay}ms`);
+        console.log(`✅ Fulfilled promise ${position} in ${delay} ms`);
       })
       .catch((position, delay) => {
-        console.log(`❌ Rejected promise ${position} in ${delay}ms`);
+        console.log(`❌ Rejected promise ${step} in ${amount} ms`);
       });
     delay += step;
   }

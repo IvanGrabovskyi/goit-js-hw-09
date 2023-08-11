@@ -78,4 +78,3 @@ function startClock() {
 }
 
 startBtn.addEventListener('click', startClock);
-document.activeElement('DOMContentLoaded', function () {});
